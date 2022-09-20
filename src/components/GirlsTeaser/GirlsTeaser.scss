@@ -1,0 +1,145 @@
+.second-teaser-content {
+  color: #0032a0;
+  text-align: left;
+  margin-left: 16px;
+
+  h3.title-teaser {
+    font-weight: 400;
+  }
+
+  h3.hdl-teaser {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
+  .teaser-link {
+    font-weight: 700;
+    font-size: 19px;
+
+    margin-top: 50px;
+  }
+
+  .teaser-link::before {
+    font-weight: 700;
+    font-size: 19px;
+    content: ">";
+    margin-top: 50px;
+  }
+}
+
+.total-teasers1 {
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  .slider-headline1 {
+    color: #0032a0;
+    font-size: 30px;
+    margin-top: 100px;
+  }
+
+  .teaser-list1 {
+    justify-content: center;
+
+    .slick-slider.slick-initialized {
+      .slick-prev,
+      .slick-next {
+        width: 17%;
+      }
+      .slick-list {
+        max-width: 1204px;
+
+        .slick-slide.slick-active.slick-current {
+          width: 372px;
+        }
+      }
+    }
+
+    .teaser5 {
+      background-color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      .cards-image {
+        overflow: hidden;
+        position: relative;
+
+        img {
+          max-width: 100%;
+        }
+      }
+      .teaser-content1 {
+        position: relative;
+        color: #0032a0;
+        .important-value {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 50px;
+        }
+      }
+    }
+    .teaser5:hover {
+      box-shadow: 0 0 20px 1px #e0e0e0;
+      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer;
+
+      img {
+        transform: scale3d(1.05, 1.05, 1) translateZ(0);
+        transition: transform 0.8s cubic-bezier(0.095, 0.33, 0.285, 1) 25ms;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:1020px) {
+  .total-teasers1 {
+    .teaser5 {
+      width: 75%;
+      
+    }
+
+    .slider-headline1 {
+      font-size: 27px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .slick-slider.slick-initialized {
+      .slick-prev,
+      .slick-next {
+        width: 10%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:959px) {
+  .total-teasers1 {
+    .teaser5 {
+      width: 75%;
+      display: inline-block;
+    }
+
+    .slider-headline1 {
+      font-size: 27px;
+    }
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .slick-slider.slick-initialized {
+      .slick-prev,
+      .slick-next {
+        width: 10%;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:640px) {
+}

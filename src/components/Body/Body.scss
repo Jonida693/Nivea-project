@@ -1,0 +1,106 @@
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #0032a0;
+  margin-top: 50px;
+  h2.section-headline {
+    color: #0032a0;
+    font-size: 27px;
+  }
+  .section-content {
+    margin-top: 10px;
+  }
+  .section-products {
+    display: flex;
+    .first-product.svg:hover {
+      width: 35%;
+      fill: black;
+    }
+    svg {
+      width: 35%;
+      fill: #0032a0;
+    }
+
+    svg:hover {
+      width: 35%;
+      fill: #8998b6;
+    }
+
+    .item1-description {
+      font-size: 20px;
+      font-weight: 500;
+      color: #0032a0;
+      position: relative;
+    }
+
+    .item1-description::before {
+      left: 95px;
+      transform: rotate(45deg);
+      content: "";
+      border-right: 2px solid transparent;
+      border-top: 2px solid transparent;
+      border-color: inherit;
+      display: inline-block;
+      height: 6px;
+      position: absolute;
+      top: 12px;
+      width: 6px;
+    }
+    .item1-description:hover {
+      color: #8998b6;
+    }
+    .second-product {
+      .item2-description {
+        font-size: 20px;
+        font-weight: 500;
+        color: #0032a0;
+        position: relative;
+      }
+      .item2-description::before {
+        left: 58px;
+        transform: rotate(45deg);
+        content: "";
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+        border-color: inherit;
+        display: inline-block;
+        height: 6px;
+        position: absolute;
+        top: 12px;
+        width: 6px;
+      }
+        .item2-description:hover {
+      color: #8998b6;
+    }
+    }
+  }
+  .first-product:hover {
+    svg {
+      fill: #8998b6;
+    }
+    .first-product {
+      color: #8998b6;
+    }
+  }
+  .second-product:hover {
+    svg {
+      fill: #8998b6;
+    }
+    .second-product {
+      color: #8998b6;
+    }
+  }
+}
+
+svg {
+  width: 35%;
+  fill: #0032a0;
+}
+
+@media screen and(max-width:959px) {
+}
+
+@media screen and(max-width:640px) {
+}
